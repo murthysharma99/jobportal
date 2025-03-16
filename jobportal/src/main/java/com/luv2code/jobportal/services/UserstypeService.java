@@ -11,9 +11,9 @@ import com.luv2code.jobportal.repository.UsersTypeRepository;
 @Service
 public class UserstypeService {
 
+	@Autowired
 	private final UsersTypeRepository usersTypeRepository;
 
-	@Autowired
 	public UserstypeService(UsersTypeRepository usersTypeRepository) {
 		this.usersTypeRepository = usersTypeRepository;
 	}
