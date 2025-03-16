@@ -9,12 +9,12 @@ import com.luv2code.jobportal.entity.UsersType;
 import com.luv2code.jobportal.repository.UsersTypeRepository;
 
 @Service
-public class UserstypeService {
+public class UsersTypeService {
 
 	@Autowired
 	private final UsersTypeRepository usersTypeRepository;
 
-	public UserstypeService(UsersTypeRepository usersTypeRepository) {
+	public UsersTypeService(UsersTypeRepository usersTypeRepository) {
 		this.usersTypeRepository = usersTypeRepository;
 	}
 

@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.luv2code.jobportal.entity.Users;
 
-public interface UsersRepository extends JpaRepository<Users, Integer> {
+import java.util.Optional;
 
+public interface UsersRepository extends JpaRepository<Users, Integer> {
+    Optional<Users> findByEmail(String email);
 }
